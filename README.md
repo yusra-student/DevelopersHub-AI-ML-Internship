@@ -1,62 +1,74 @@
-# DevelopersHub AI/ML Engineering Internship
+# 🎓 DevelopersHub AI/ML Engineering Internship
 
-Welcome to my AI/ML Engineering Internship repository. This repository contains the completed tasks assigned during my tenure at DevelopersHub Corporation. Each task is organized into its own directory with detailed notebooks, visualizations, and documentation.
-
-## 🚀 Projects Overview
-
-### [Task 1: Iris Flower Classification & Analysis](./Task1_Iris_Analysis/)
-- **Objective:** Perform Exploratory Data Analysis (EDA) on the classic Iris dataset.
-- **Key Features:** Data visualization (Boxplots, Histograms, Pairplots), statistical analysis, and data cleaning.
-- **Technologies:** Pandas, Seaborn, Matplotlib.
-
-### [Task 2: Stock Price Prediction Using Machine Learning](./Task2_Stock_Price_Prediction/)
-- **Objective:** Predict the next day's closing price of Apple Inc. (AAPL) using historical market data.
-- **Key Features:** Data acquisition via `yfinance`, feature engineering, and model comparison.
-- **Models:** Linear Regression and Random Forest Regressor.
-- **Technologies:** Scikit-Learn, YFinance, Pandas, Matplotlib.
+This repository showcases my progress and completed projects during the **AI/ML Engineering Internship** at **DevelopersHub Corporation**. It serves as a comprehensive portfolio of data science, predictive modeling, and machine learning applications.
 
 ---
 
-## 🛠️ Tech Stack
-- **Languages:** Python 3.x
-- **Libraries:** 
-  - Data Analysis: `pandas`, `numpy`
-  - Visualization: `matplotlib`, `seaborn`
-  - Machine Learning: `scikit-learn`
-  - Financial Data: `yfinance`
-- **Environment:** Jupyter Notebook (`.ipynb`)
+## 📂 Project Portfolio
+
+### [Task 1: Iris Flower Analysis (EDA)](./Task1_Iris_Analysis/)
+*   **Focus:** Exploratory Data Analysis & Statistical Visualization.
+*   **Highlights:** 
+    *   Comprehensive data profiling of the Iris dataset.
+    *   Visual distribution analysis using Boxplots and Histograms.
+    *   Correlation mapping via Seaborn Pairplots.
+*   **Status:** ✅ Completed & Documented.
+
+### [Task 2: AAPL Stock Price Prediction](./Task2_Stock_Price_Prediction/)
+*   **Focus:** Time-Series Forecasting using Regression.
+*   **Highlights:**
+    *   Live data extraction using `yfinance` API.
+    *   Comparison between **Linear Regression** and **Random Forest** models.
+    *   Detailed evaluation metrics: MAE, RMSE, and R2 Score.
+    *   Visual results showing Actual vs. Predicted price trends.
+*   **Status:** ✅ Executed & Pushed with full outputs.
 
 ---
 
-## 📂 Repository Structure
-```text
-.
-├── Task1_Iris_Analysis/        # EDA and Classification of Iris dataset
-├── Task2_Stock_Price_Prediction/ # Time-series prediction of AAPL stock
-├── .gitignore                  # Python-specific git ignore rules
-└── README.md                   # Project overview (this file)
-```
-
-## ⚙️ How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yusra-student/DevelopersHub-AI-ML-Internship.git
-   ```
-2. Navigate to a specific task folder:
-   ```bash
-   cd Task2_Stock_Price_Prediction
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Open the Jupyter Notebook:
-   ```bash
-   jupyter notebook notebook/stock_prediction.ipynb
-   ```
+## 🛠️ Technical Stack
+*   **Language:** Python 3.11+
+*   **Core Libraries:** `pandas`, `numpy`
+*   **Data Science:** `scikit-learn`
+*   **Visualization:** `matplotlib`, `seaborn`
+*   **Finance API:** `yfinance`
+*   **Platform:** Jupyter Notebooks
 
 ---
 
-**Intern Name:** AI/ML Intern  
-**Organization:** DevelopersHub Corporation  
-**Date:** June 2026
+## 🚀 Getting Started
+
+To replicate this environment locally:
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/yusra-student/DevelopersHub-AI-ML-Internship.git
+    cd DevelopersHub-AI-ML-Internship
+    ```
+
+2.  **Setup Environment:**
+    We recommend using a virtual environment:
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
+
+3.  **Install Dependencies:**
+    Each task folder contains its own `requirements.txt`:
+    ```bash
+    pip install -r Task2_Stock_Price_Prediction/requirements.txt
+    ```
+
+4.  **Launch Notebooks:**
+    ```bash
+    jupyter notebook
+    ```
+
+---
+
+## 👤 Intern Information
+*   **Intern Name:** AI/ML Engineering Intern
+*   **Cohort:** June 2026
+*   **Organization:** [DevelopersHub Corporation](https://developershub.co/)
+
+---
+*This repository is maintained as part of the internship submission requirements.*
