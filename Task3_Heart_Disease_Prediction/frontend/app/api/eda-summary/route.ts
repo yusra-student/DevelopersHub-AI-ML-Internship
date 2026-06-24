@@ -2,7 +2,8 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
-    const response = await fetch("http://127.0.0.1:8000/eda-summary", {
+    const backendUrl = process.env.BACKEND_API_URL || "https://yusrawaheedyw79-internshiptask3.hf.space";
+    const response = await fetch(`${backendUrl}/eda-summary`, {
       method: "GET",
     });
 

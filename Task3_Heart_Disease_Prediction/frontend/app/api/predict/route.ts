@@ -3,7 +3,8 @@ import { NextResponse } from "next/server";
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const response = await fetch("http://127.0.0.1:8000/predict", {
+    const backendUrl = process.env.BACKEND_API_URL || "https://yusrawaheedyw79-internshiptask3.hf.space";
+    const response = await fetch(`${backendUrl}/predict`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
