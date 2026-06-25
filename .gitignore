@@ -12,3 +12,6 @@ venv/
 
 # Task 4 — Health Query Chatbot: logs contain user questions
 Task4_Health_Query_Chatbot/chat_logs.json
+
+# Task 5 — Large model files (320MB+); run notebook in Colab to generate
+Task5_Mental_Health_Chatbot/model/fine_tuned_model/model.safetensors
