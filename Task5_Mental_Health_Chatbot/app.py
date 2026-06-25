@@ -14,14 +14,7 @@ def chat(message, history, situation):
     response = generate_response(model, tokenizer, device, prompt)
     return response
 
-with gr.Blocks(
-    title="Mental Health Support Chatbot",
-    theme=gr.themes.Soft(),
-    css="""
-    .crisis-box { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 12px; border-radius: 6px; margin-bottom: 12px; }
-    .disclaimer { font-size: 12px; color: #666; text-align: center; margin-top: 8px; }
-    """
-) as demo:
+with gr.Blocks(title="Mental Health Support Chatbot") as demo:
     gr.Markdown("# 🫂 Mental Health Support Chatbot")
     gr.Markdown(
         "This chatbot is fine-tuned to respond with empathy and emotional awareness. "
@@ -54,4 +47,4 @@ with gr.Blocks(
     )
 
 if __name__ == "__main__":
-    demo.launch(share=False)
+    demo.launch(share=False, theme=gr.themes.Soft())
